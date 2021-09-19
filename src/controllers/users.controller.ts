@@ -9,7 +9,7 @@ class UsersController {
 
   public getRandomMessage = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const findRandomMessage: FunnyMessage = await this.messagesService.getRandomMessage();
+      const findRandomMessage: FunnyMessage[] = await this.messagesService.getRandomMessage();
       const randomFunnyMessage = { message: findRandomMessage[0].message };
       res.status(200).json({ data: randomFunnyMessage });
     } catch (error) {
