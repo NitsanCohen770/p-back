@@ -1,0 +1,1 @@
+{"version":3,"file":"funnyMessage.js","sourceRoot":"","sources":["../../src/models/funnyMessage.ts"],"names":[],"mappings":";;AAAA,uCAA2D;AAG3D,MAAM,YAAY,GAAW,IAAI,iBAAM,CAAC;IACtC,OAAO,EAAE;QACP,IAAI,EAAE,MAAM;QACZ,QAAQ,EAAE,IAAI;KACf;CACF,CAAC,CAAC;AAEH,MAAM,iBAAiB,GAAG,iBAAM,CAAC,YAAY,IAAI,IAAA,gBAAK,EAA0B,cAAc,EAAE,YAAY,CAAC,CAAC;AAE9G,kBAAe,iBAAiB,CAAC"}
