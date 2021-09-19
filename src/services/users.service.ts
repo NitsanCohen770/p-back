@@ -19,8 +19,8 @@ export class UserActionsService {
 export class MessagesService {
   public funnyMessages = funnyMessageModel;
 
-  public async getRandomMessage(): Promise<FunnyMessage> {
-    const funnyMessage: FunnyMessage = await this.funnyMessages.aggregate([{ $sample: { size: 1 } }]);
+  public async getRandomMessage(): Promise<FunnyMessage[]> {
+    const funnyMessage: FunnyMessage[] = await this.funnyMessages.aggregate([{ $sample: { size: 1 } }]);
     return funnyMessage;
   }
 }
