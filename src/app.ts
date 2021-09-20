@@ -56,7 +56,7 @@ class App {
 
   private initializeMiddlewares() {
     this.app.use(morgan(config.get('log.format'), { stream }));
-    this.app.use(cors({ origin: 'https://assafmedia-game.netlify.app/' }));
+    this.app.use(cors({ origin: '*' }));
     this.app.use(hpp());
     this.app.use(helmet());
     this.app.use(compression());

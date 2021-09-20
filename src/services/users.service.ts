@@ -7,7 +7,7 @@ import { FunnyMessage } from '@/interfaces/funnyMessage';
 
 export class UserActionsService {
   public usersActions = usersActionsModel;
-  public async createUserAction(userActionData:UserActions): Promise<UserActions> {
+  public async createUserAction(userActionData: UserActions): Promise<UserActions> {
     if (isEmpty(userActionData)) throw new HttpException(400, "You're not userActionData");
 
     const createUserData: UserActions = await this.usersActions.create({ ...userActionData });
